@@ -4,11 +4,11 @@
 
 ** Actualizando **
 
-[Requerimientos Doc]("./../content/1.Requerimientos.docx")
+[Requerimientos Doc](content/1.Requerimientos.docx)
 
 ## Buyer Persona
 
-[Buyer Persona pdf]("./../content/1.BuyerPersona.pdf")
+[Buyer Persona pdf](content/2.BuyerPersona.pdf)
 
 ## Publico Objetivo
 
