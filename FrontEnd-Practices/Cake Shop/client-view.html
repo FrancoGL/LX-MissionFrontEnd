@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cake Shop</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <img src="./assets/img/Logo.png" alt="Cake Shop Logo">
-    </nav>
-  </header>
-  <main>
-    <h1>Welcome</h1>
-  </main>
-  <footer>
-
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./assets/img/Logo.png" alt="Cake Shop Logo" />
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome Marine</h1>
+      <p>You need a cake? No problem, here we have all you need</p>
+    </main>
+    <section>
+      <h2>Price</h2>
+      <p>Price of all cakes: 150 x Kg</p>
+    </section>
+    <section>
+      <form action="">
+        <fieldset>
+          <legend>Select your flavors</legend>
+          <label for="chocolate">
+            <input type="checkbox" name="flavor" id="chocolate" />
+            Chocolate
+          </label>
+          <label for="strawberry">
+            <input type="checkbox" name="flavor" id="strawberry" />
+            Strawberry
+          </label>
+          <label for="vanilla">
+            <input type="checkbox" name="flavor" id="vanilla" />
+            Vanilla
+          </label>
+          <label for="dulce-de-leche">
+            <input type="checkbox" name="flavor" id="dulce-de-leche" />
+            Dulce de leche
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Select your ornaments</legend>
+          <label for="candle">
+            <input type="checkbox" name="ornament" id="candle" />
+            Candle
+          </label>
+          <label for="candle-with-number">
+            <input type="checkbox" name="ornament" id="candle-with-number" />
+            Candle with number
+          </label>
+          <label for="Sparkler">
+            <input type="checkbox" name="ornament" id="sparkler" />
+            Sparkler
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Complete your info</legend>
+          <label for="name">
+            Name
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </label>
+          <label for="phone-number">
+            Phone Number
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Enter your phone number"
+            />
+          </label>
+          <label for="email">
+            Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </label>
+          <label for="description">
+            Description
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="General Description of your cake"
+            ></textarea>
+          </label>
+        </fieldset>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <ul>
+        <li>Address: Calle Coronado</li>
+        <li>Phone Number: 249586672</li>
+        <li>Business Hours: 9:00hs - 12:30hs | 15:30hs - 20:00hs</li>
+      </ul>
+    </footer>
+  </body>
 </html>
