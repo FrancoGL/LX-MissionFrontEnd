@@ -5,89 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake Shop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Reset and Normalize -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/customer-style.css" />
   </head>
-  <body>
+  <body class="body-customer">
     <header>
-      <nav>
-        <img src="./assets/img/Logo.png" alt="Cake Shop Logo" />
+      <nav class="nav">
+        <img class="nav-img" src="./assets/img/Logo.png" alt="Cake Shop Logo" />
+        <a class="nav-link" href="./admin-view.html">Admin Panel</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <h1>Welcome Marine</h1>
-      <p>You need a cake? No problem, here we have all you need</p>
+      <p class="main-text">You need a cake? <br> No problem, here we have all that you need</p>
     </main>
-    <section>
-      <h2>Price</h2>
-      <p>Price of all cakes: 150 x Kg</p>
+    <section class="price">
+      <h2 class="price-title">Price</h2>
+      <p class="price-text">Price of all cakes: 150 x Kg</p>
     </section>
-    <section>
-      <form action="">
+    <section class="form-container">
+      <form class="form" action="">
         <fieldset>
           <legend>Select your flavors</legend>
-          <label for="chocolate">
+          <label class="label" for="chocolate">
             <input type="checkbox" name="flavor" id="chocolate" />
             Chocolate
           </label>
-          <label for="strawberry">
+          <label class="label" for="strawberry">
             <input type="checkbox" name="flavor" id="strawberry" />
             Strawberry
           </label>
-          <label for="vanilla">
+          <label class="label" for="vanilla">
             <input type="checkbox" name="flavor" id="vanilla" />
             Vanilla
           </label>
-          <label for="dulce-de-leche">
+          <label class="label" for="dulce-de-leche">
             <input type="checkbox" name="flavor" id="dulce-de-leche" />
             Dulce de leche
           </label>
         </fieldset>
         <fieldset>
           <legend>Select your ornaments</legend>
-          <label for="candle">
+          <label class="label" for="candle">
             <input type="checkbox" name="ornament" id="candle" />
             Candle
           </label>
-          <label for="candle-with-number">
+          <label class="label" for="candle-with-number">
             <input type="checkbox" name="ornament" id="candle-with-number" />
             Candle with number
           </label>
-          <label for="Sparkler">
+          <label class="label" for="Sparkler">
             <input type="checkbox" name="ornament" id="sparkler" />
             Sparkler
           </label>
         </fieldset>
         <fieldset>
           <legend>Complete your info</legend>
-          <label for="name">
+          <label class="label" for="name">
             Name
-            <input
+            <input class="input"
               type="text"
               name="name"
               id="name"
               placeholder="Enter your name"
             />
           </label>
-          <label for="phone-number">
+          <label class="label" for="phone-number">
             Phone Number
-            <input
+            <input class="input"
               type="tel"
               name="phone-number"
               id="phone-number"
               placeholder="Enter your phone number"
             />
           </label>
-          <label for="email">
+          <label class="label" for="email">
             Email
-            <input
+            <input class="input"
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email"
             />
           </label>
-          <label for="description">
+          <label class="label" for="description">
             Description
-            <textarea
+            <textarea class="input textarea"
               name="description"
               id="description"
               cols="30"
@@ -96,14 +109,14 @@
             ></textarea>
           </label>
         </fieldset>
-        <button type="submit">Send</button>
+        <button class="form-btn" type="submit">Send</button>
       </form>
     </section>
-    <footer>
+    <footer class="footer">
       <ul>
-        <li>Address: Calle Coronado</li>
-        <li>Phone Number: 249586672</li>
-        <li>Business Hours: 9:00hs - 12:30hs | 15:30hs - 20:00hs</li>
+        <li class="footer-li">Address: Calle Coronado</li>
+        <li class="footer-li">Phone Number: 249586672</li>
+        <li class="footer-li">Business Hours: 9:00hs - 12:30hs <br> 15:30hs - 20:00hs</li>
       </ul>
     </footer>
   </body>
