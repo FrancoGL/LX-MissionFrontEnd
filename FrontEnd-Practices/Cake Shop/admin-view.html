@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake Shop</title>
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+       rel="stylesheet"
+     />
+     <!-- Reset and Normalize -->
+     <link rel="stylesheet" href="./css/reset.css" />
+     <link rel="stylesheet" href="./css/normalize.css" />
+     <!-- Style -->
+     <link rel="stylesheet" href="./css/customer-style.css">
+     <link rel="stylesheet" href="./css/admin-style.css" />
   </head>
-  <body>
+  <body class="body-admin">
     <header>
-      <nav>
-        <img src="./assets/img/Logo.png" alt="Cake Shop Logo" />
+      <nav class="nav">
+        <img class="nav-img" src="./assets/img/Logo.png" alt="Cake Shop Logo" />
+        <a class="nav-link" href="./customer-view.html">Customer Panel</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <h1>Welcome Captain!</h1>
     </main>
-    <section>
-      <h2>Flavors</h2>
-      <table>
-        <caption>Available Flavors</caption>
+    <section class="section">
+      <h2 class="section-title">Flavors</h2>
+      <table class="table">
+        <caption class="table-caption">Available Flavors</caption>
        <thead>
         <tr>
           <th>Flavors</th>
@@ -45,10 +59,10 @@
        </tbody>
       </table>
     </section>
-    <section>
-      <h2>Ornaments</h2>
-      <table>
-        <caption>Available Ornaments</caption>
+    <section class="section">
+      <h2 class="section-title">Ornaments</h2>
+      <table class="table">
+        <caption class="table-caption">Available Ornaments</caption>
         <thead>
           <tr>
             <th>Ornament</th>
@@ -71,10 +85,10 @@
         </tbody>
       </table>
     </section>
-    <section>
-      <h2>Orders</h2>
-      <table>
-        <caption>Customer Orders</caption>
+    <section class="section">
+      <h2 class="section-title">Orders</h2>
+      <table class="table table-orders">
+        <caption class="table-caption">Customer Orders</caption>
         <thead>
           <tr>
             <th>Id</th>
@@ -109,11 +123,11 @@
         </tbody>
       </table>
     </section>
-    <footer>
+    <footer class="footer">
       <ul>
-        <li>Address: Calle Coronado</li>
-        <li>Phone Number: 249586672</li>
-        <li>Business Hours: 9:00hs - 12:30hs | 15:30hs - 20:00hs</li>
+        <li class="footer-li">Address: Calle Coronado</li>
+        <li class="footer-li">Phone Number: 249586672</li>
+        <li class="footer-li">Business Hours: 9:00hs - 12:30hs <br> 15:30hs - 20:00hs</li>
       </ul>
     </footer>
   </body>
