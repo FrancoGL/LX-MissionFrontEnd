@@ -1,44 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vaccination</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li>Database</li>
-        <li>Education</li>
-        <li>News</li>
-        <li>Regulation</li>
-        <li>Hoax Buster</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Fight Virus With Vaccination</h1>
-    <p>Let's stop this pandemic by killing the virus with vaccine, don't let yourself and your family get infected</p>
-    <p>Best protection</p>
-    <p>Selected Vaccines</p>
-    <p>Schedule your vaccinations</p>
-  </main>
-  <section>
-    <div>
-      <p>Location</p>
-      <p>Jakarta Utara</p>
-    </div>
-    <div>
-      <p>Date</p>
-      <p>08 July 2021</p>
-    </div>
-    <div>
-      <p>Vaccine Type</p>
-      <p>Moderna</p>
-    </div>
-    <button>Submit</button>
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/vaccination_logo.png"
+      type="image/x-icon"
+    />
+    <title>Vaccination</title>
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/4a2b2b8d6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Reset and Normalize -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Database</li>
+          <li>Education</li>
+          <li>News</li>
+          <li>Regulation</li>
+          <li>Hoax Buster</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="intro">
+        <h1>Fight Virus With Vaccination</h1>
+        <p>
+          Let's stop this pandemic by killing the virus with vaccine, don't let
+          yourself and your family get infected
+        </p>
+        <span><i class="fa-solid fa-shield-virus"></i>Best protection</span>
+        <span><i class="fa-solid fa-star"></i>Selected Vaccines</span>
+      </section>
+      <section class="schedule-form">
+        <form action="">
+          <fieldset>
+            <legend>
+              <i class="fa-solid fa-clock"></i>Schedule your vaccinations
+            </legend>
+            <div>
+              <label for="location"
+                ><i class="fa-solid fa-location-dot"></i>Location</label
+              >
+              <input list="location-list" name="location" id="location" />
+              <datalist id="location-list">
+                <option value="lorem1">lorem1</option>
+                <option value="lorem2">lorem2</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="date"
+                ><i class="fa-solid fa-calendar-days"></i>Date</label
+              >
+              <input type="date" name="date" id="date" />
+            </div>
+            <div>
+              <label for="type"
+                ><i class="fa-solid fa-syringe"></i>Vaccine Type</label
+              >
+              <input list="type-list" name="type" id="type" />
+              <datalist id="type-list">
+                <option value="astrazeneca">AstraZeneca</option>
+                <option value="sinovac">Sinovac</option>
+                <option value="pfizer">Pfizer</option>
+                <option value="moderna">moderna</option>
+              </datalist>
+            </div>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <img
+        class="image-woman"
+        src="./assets/img/woman_vaccination.png"
+        alt="Woman Vaccination"
+      />
+      <section class="vaccinations">
+        <img src="./assets/img/astrazeneca.png" alt="AstraZeneca Logo" />
+        <img src="./assets/img/Sinovac_logo.svg.png" alt="Sinovac Logo" />
+        <img src="./assets/img/Pfizer-logo.png" alt="Pzifer Logo" />
+        <img src="./assets/img/Moderna_logo.svg.png" alt="Moderna Logo" />
+      </section>
+    </main>
+    <section class="info-content">
+      <div>
+        <h2>Why should I vaccine?</h2>
+        <p>
+          In order to avoid any doubts about getting the COVID-19 vaccine,
+          identify the following 4 benefits of COVID-19 vaccination:
+        </p>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <i class="fa-solid fa-layer-group"></i
+          ><span class="title">Minimize the spread of viruses</span>
+        </div>
+        <p class="card__content">
+          Vaccine has been proven effective to prevent someone from getting
+          infected with Coronavirus
+        </p>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <i class="fa-solid fa-shield-halved"></i
+          ><span class="title">Forming Antibodies</span>
+        </div>
+        <p class="card__content">
+          COVID-19 vaccine proven to help shape antibody response for immune
+          system
+        </p>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <i class="fa-solid fa-users"></i
+          ><span class="title">Protecting people nearby</span>
+        </div>
+        <p class="card__content">
+          The benefits of COVID-19 vaccination are the vaccine that we get can
+          also help protect people around us
+        </p>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <i class="fa-solid fa-chart-line"></i
+          ><span class="title">Creating group immunity</span>
+        </div>
+        <p class="card__content">
+          COVID-19 vaccination is also beneficial for creating group immunity.
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
