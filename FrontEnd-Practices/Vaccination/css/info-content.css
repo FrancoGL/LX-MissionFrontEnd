@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #8391a7;
+  --secondary-color: #3858d6;
+  --third-color: #1a3a70;
+  --fourth-color: #ffce00;
+  --primary-default-color: #fff;
+}
+
+
+.info-content {
+  padding: 1rem;
+}
+
+.main-info-title {
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: var(--third-color);
+  text-align: center;
+}
+
+.main-info-text {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card__header {
+  margin-bottom: 1rem;
+}
+
+.card__header i {
+  margin-right: 0.3rem;
+  color: var(--third-color);
+}
+
+.card__header span {
+  color: var(--third-color);
+}

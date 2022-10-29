@@ -10,42 +10,75 @@
       type="image/x-icon"
     />
     <title>Vaccination</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/4a2b2b8d6e.js"
       crossorigin="anonymous"
     ></script>
     <!-- Reset and Normalize -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/info-content.css" />
+    <link rel="stylesheet" href="./css/preparation-info.css" />
+    <link rel="stylesheet" href="./css/contact-info.css" />
+    <link rel="stylesheet" href="./css/footer.css">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>Database</li>
-          <li>Education</li>
-          <li>News</li>
-          <li>Regulation</li>
-          <li>Hoax Buster</li>
+      <span class="header-title">Vaccination</span>
+      <nav class="navigation">
+        <ul class="navigation-links">
+          <li class="container-link">
+            <a class="nav-link" href="#">Database</a>
+          </li>
+          <li class="container-link">
+            <a class="nav-link" href="#">Education</a>
+          </li>
+          <li class="container-link"><a class="nav-link" href="#">News</a></li>
+          <li class="container-link">
+            <a class="nav-link" href="#">Regulation</a>
+          </li>
+          <li class="container-link btn-link">
+            <a class="nav-link" href="#">Hoax Buster</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="main-content">
       <section class="intro">
-        <h1>Fight Virus With Vaccination</h1>
-        <p>
+        <h1 class="intro-title">Fight Virus With Vaccination</h1>
+        <p class="intro-text">
           Let's stop this pandemic by killing the virus with vaccine, don't let
           yourself and your family get infected
         </p>
-        <span><i class="fa-solid fa-shield-virus"></i>Best protection</span>
-        <span><i class="fa-solid fa-star"></i>Selected Vaccines</span>
+        <div class="review">
+          <span class="review-text"
+            ><i class="fa-solid fa-shield-virus"></i>Best protection</span
+          >
+          <span class="review-text"
+            ><i class="fa-solid fa-star"></i>Selected Vaccines</span
+          >
+        </div>
       </section>
+      <img
+        class="image-woman"
+        src="./assets/img/woman_vaccination.png"
+        alt="Woman Vaccination"
+      />
       <section class="schedule-form">
         <form action="">
-          <fieldset>
+          <fieldset class="fieldset">
             <legend>
               <i class="fa-solid fa-clock"></i>Schedule your vaccinations
             </legend>
@@ -81,11 +114,6 @@
           </fieldset>
         </form>
       </section>
-      <img
-        class="image-woman"
-        src="./assets/img/woman_vaccination.png"
-        alt="Woman Vaccination"
-      />
       <section class="vaccinations">
         <img src="./assets/img/astrazeneca.png" alt="AstraZeneca Logo" />
         <img src="./assets/img/Sinovac_logo.svg.png" alt="Sinovac Logo" />
@@ -94,9 +122,9 @@
       </section>
     </main>
     <section class="info-content">
-      <div>
-        <h2>Why should I vaccine?</h2>
-        <p>
+      <div class="main-info">
+        <h2 class="main-info-title">Why should I vaccine?</h2>
+        <p class="main-info-text">
           In order to avoid any doubts about getting the COVID-19 vaccine,
           identify the following 4 benefits of COVID-19 vaccination:
         </p>
@@ -141,5 +169,169 @@
         </p>
       </div>
     </section>
+    <section class="preparation-info">
+      <img src="./assets/img/woman_no_background.png" alt="Woman image" />
+      <div class="main-info">
+        <h2 class="main-info-title">Preparations before vaccine</h2>
+        <p class="main-info-text">
+          The success of vaccines is strongly influenced by the strength of the
+          body's immune system. Therefore, there are several things that can be
+          tried to make the COVID-19 vaccine work:
+        </p>
+      </div>
+      <div>
+        <div class="card card-info">
+          <span class="info-header"
+            ><i class="fa-solid fa-rectangle-xmark"></i> Avoid alcoholic
+            beverages<i class="fa-solid fa-caret-down"></i
+          ></span>
+          <p class="info-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            amet perspiciatis cum, harum vero labore id ex autem nostrum quidem
+            corporis ad nesciunt quaerat. Ipsam, ut. Perferendis tempora
+            laudantium debitis?
+          </p>
+        </div>
+        <div class="card card-info">
+          <span class="info-header"
+            ><i class="fa-solid fa-square-xmark"></i>Avoid Stress<i
+              class="fa-solid fa-caret-down"
+            ></i
+          ></span>
+          <p class="info-body">
+            Stress has a profound effect on immune work. Moreover, prolonged
+            stress can increase cortisol production and oxidative stress in the
+            body.
+          </p>
+        </div>
+        <div class="card card-info">
+          <span class="info-header"
+            ><i class="fa-solid fa-chart-column"></i>Eat healthy food<i
+              class="fa-solid fa-caret-down"
+            ></i
+          ></span>
+          <p class="info-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            harum soluta ipsum magni libero molestiae, iure a natus aliquam
+            minima quaerat sapiente adipisci saepe et suscipit. Ea aspernatur
+            quas illo?
+          </p>
+        </div>
+        <div class="card card-info">
+          <span class="info-header"
+            ><i class="fa-solid fa-square-check"></i> Get enough sleep<i
+              class="fa-solid fa-caret-down"
+            ></i
+          ></span>
+          <p class="info-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+            saepe aliquam quod, pariatur deleniti quos labore excepturi, sunt,
+            ex quam delectus corrupti odio debitis. Tempora natus quaerat
+            architecto ab voluptates.
+          </p>
+        </div>
+        <div class="card card-info">
+          <span class="info-header"
+            ><i class="fa-solid fa-heart"></i>Exercise and physical activity<i
+              class="fa-solid fa-caret-down"
+            ></i
+          ></span>
+          <p class="info-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            labore provident, repellendus nisi nostrum quasi deleniti ea dicta
+            deserunt, voluptatibus, dolor officiis eaque rerum. Laudantium
+            minima voluptates alias dignissimos ut!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-info">
+      <img src="./assets/img/men_right.png" alt="Men image" />
+      <div class="main-info">
+        <h2 class="main-info-title">Emergency Contact</h2>
+        <p class="main-info-text">
+          Contact one of the contact below if you or your family feel unwell and
+          have a similar symptoms such as COVID-19, make sure you also take care
+          of yourself before reporting to us:
+        </p>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <i class="fa-solid fa-phone"></i>
+          <div><span>Call</span><span>021.123.145.14</span></div>
+        </div>
+        <button class="btn-link">Call Now</button>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <i class="fa-solid fa-comment-dots"></i>
+          <div>
+            <span>Chat</span
+              ><span>021.123.145.14</span>
+          </div>
+        </div>
+        <button class="btn-link">Chat Now</button>
+      </div>
+      <div class="card">
+        <div class="card__header video">
+          <i class="fa-solid fa-video"></i>
+          <div>
+            <span>Video Call</span
+              ><span>021.123.145.14</span>
+          </div>
+        </div>
+        <button class="btn-link">Video Call Now</button>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span>Message</span
+              ><span>021.123.145.14</span>
+          </div>
+        </div>
+        <button class="btn-link">Message Now</button>
+      </div>
+    </section>
+    <footer>
+      <section class=" header-footer">
+        <span class="header-title">Vaccination</span>
+        <p class="header-text">Our goal is help the world free from the ongoing pandemic</p>
+      </section>
+      <section class="links-footer">
+        <div>
+          <span class="link-title">About</span>
+          <ul>
+            <li class="footer-link"><a href="#">About us</a></li>
+            <li class="footer-link"><a href="#">Features</a></li>
+            <li class="footer-link"><a href="#">News & blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="link-title">Company</span>
+          <ul>
+            <li class="footer-link"><a href="#">How we work?</a></li>
+            <li class="footer-link"><a href="#">Capital</a></li>
+            <li class="footer-link"><a href="#">Security</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="link-title">Support</span>
+          <ul>
+            <li class="footer-link"><a href="#">FAQs</a></li>
+            <li class="footer-link"><a href="#">Support Center</a></li>
+            <li class="footer-link"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="copyright">
+        <span class="copyright"
+          ><i class="fa-regular fa-copyright"></i> Vaccination. All rights
+          reserved.</span
+        >
+        <a class="terms-link">Terms & Agreements</a>
+        <a class="terms-link">Privacy Policy</a>
+      </section>
+    </footer>
   </body>
 </html>

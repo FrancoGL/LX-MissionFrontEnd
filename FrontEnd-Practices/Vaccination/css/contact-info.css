@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #8391a7;
+  --secondary-color: #3858d6;
+  --third-color: #1a3a70;
+  --fourth-color: #ffce00;
+  --primary-default-color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.contact-info img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-info .card {
+  width: 50%;
+}
+
+.contact-info .card__header {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+}
+
+.contact-info .card-header i {
+  font-size: 1.3rem;
+}
+
+.contact-info .video {
+  width: 80%;
+}
+
+.contact-info .card__header span:first-child {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+.contact-info .card__header span:last-child {
+  font-size: 0.7rem;
+  color: var(--primary-color);
+}
+
+.contact-info button {
+  padding: 0.5rem 1rem;
+  color: var(--primary-default-color);
+  border: none;
+}

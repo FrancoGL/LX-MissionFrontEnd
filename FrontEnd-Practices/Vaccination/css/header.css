@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #8391a7;
+  --secondary-color: #3858d6;
+  --primary-default-color: #fff;
+}
+
+header {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--primary-default-color);
+}
+
+.header-title {
+  margin: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-link {
+  margin: 0.5rem;
+}
+
+.nav-link {
+  color: var(--primary-color);
+}
+
+.btn-link {
+  padding: 0.7rem 0.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.btn-link > a {
+  color: var(--primary-default-color);
+}

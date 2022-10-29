@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #8391a7;
+  --secondary-color: #3858d6;
+  --third-color: #1a3a70;
+  --primary-default-color: #fff;
+}
+
+.preparation-info {
+  padding: 1rem;
+}
+
+.preparation-info img {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.preparation-info .info-header {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--third-color);
+}
+
+.preparation-info .info-body {
+  color: var(--primary-color);
+}
+

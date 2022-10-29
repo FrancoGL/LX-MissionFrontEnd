@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #8391a7;
+  --secondary-color: #3858d6;
+  --third-color: #1a3a70;
+  --fourth-color: #ffce00;
+  --primary-default-color: #fff;
+}
+
+.main-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 1rem;
+}
+
+.intro-title {
+  color: var(--third-color);
+}
+
+.intro-text {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.review {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.review-text {
+  color: var(--third-color);
+}
+
+.review-text > i {
+  margin-right: 0.3rem;
+  color: var(--fourth-color);
+}
+
+.image-woman {
+  width: 100%;
+}
+
+.schedule-form {
+  padding: 0.8rem 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.schedule-form legend {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--third-color);
+}
+
+.schedule-form i {
+  margin-right: 0.3rem;
+  color: var(--third-color);
+}
+
+.schedule-form label {
+  display: block;
+  margin: 0.2rem;
+  color: var(--primary-color);
+}
+
+.schedule-form input {
+  width: 50%;
+  margin: 0.5rem;
+}
+
+.schedule-form button {
+  margin-top: 1rem;
+  padding: 0.5rem 0.7rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-default-color);
+}
+
+.vaccinations {
+  margin: 1rem;
+}
+
+.vaccinations img {
+  margin: 0.4rem;
+}
