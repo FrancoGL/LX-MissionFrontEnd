@@ -26,14 +26,15 @@
 }
 
 .card {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   padding: 0.5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
   text-align: center;
+  box-shadow: -2px 21px 46px -26px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px 21px 46px -26px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 21px 46px -26px rgba(0,0,0,0.75);
 }
 
 .card__header {
@@ -47,4 +48,24 @@
 
 .card__header span {
   color: var(--third-color);
+}
+
+.card__content {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .info-content {
+    padding: 1rem 4rem;
+  }
+
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info-content .card {
+    width: 40%;
+    padding: 2rem;
+  }
 }

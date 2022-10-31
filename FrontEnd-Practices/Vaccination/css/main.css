@@ -46,8 +46,9 @@
 .schedule-form {
   padding: 0.8rem 0.5rem;
   margin-top: 1rem;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
+  box-shadow: -2px 21px 46px -26px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px 21px 46px -26px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 21px 46px -26px rgba(0,0,0,0.75);
 }
 
 .schedule-form legend {
@@ -90,4 +91,14 @@
 
 .vaccinations img {
   margin: 0.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding:  1rem 4rem;
+  }
+
+  .review {
+    justify-content: space-around;
+  }
 }

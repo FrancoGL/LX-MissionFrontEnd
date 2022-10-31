@@ -54,3 +54,22 @@
   color: var(--primary-default-color);
   border: none;
 }
+
+@media screen and (min-width: 768px) {
+  .contact-info {
+    padding: 1rem 4rem;
+  }
+
+  .contact-info .container-card {
+    justify-content: space-around;
+  }
+
+  .contact-info .card {
+    width: 35%;
+    padding: 2rem;
+  }
+
+  .contact-info i {
+    font-size: 1.3rem;
+  }
+}

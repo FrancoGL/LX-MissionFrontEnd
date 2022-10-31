@@ -40,10 +40,28 @@ footer .header-text {
 
 .copyright {
   margin-top: 1rem;
+  color: var(--third-color);
 }
 
 .terms-link {
   margin: 0.5rem 0;
   display: block;
   width: 100%;
+  color: var(--third-color);
+}
+
+@media screen and (min-width: 768px) {
+
+  footer {
+    padding: 1rem 4rem;
+  }
+
+  .links-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link-title, .footer-link {
+    margin-bottom: 1rem;
+  }
 }
