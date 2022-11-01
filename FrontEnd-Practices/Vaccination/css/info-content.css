@@ -69,3 +69,33 @@
     padding: 2rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .info-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .main-info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .container-card {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-content: space-between;
+  }
+
+  .info-content .card {
+    width: 15%;
+    text-align: left;
+  }
+
+  .card__header i {
+    display: block;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+}
