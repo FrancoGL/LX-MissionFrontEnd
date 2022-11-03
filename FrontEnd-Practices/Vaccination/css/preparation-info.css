@@ -47,3 +47,36 @@
     justify-content: space-around;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .preparation-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .preparation-info img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .main-info {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .preparation-info .container-card {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    flex-flow: column nowrap;
+  }
+
+  .preparation-info .card-info {
+    width: 100%;
+    padding: 1.2rem 0;
+  }
+
+  .preparation-info .card-info i {
+    font-size: 1.4rem;
+  }
+}

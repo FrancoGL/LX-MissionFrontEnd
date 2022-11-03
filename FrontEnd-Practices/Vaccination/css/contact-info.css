@@ -73,3 +73,26 @@
     font-size: 1.3rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .contact-info .main-info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .contact-info .container-card {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .contact-info img {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}

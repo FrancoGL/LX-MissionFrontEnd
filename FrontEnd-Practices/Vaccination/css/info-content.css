@@ -78,8 +78,19 @@
   }
 
   .main-info {
+    width: 70%;
+    margin-bottom: 1.3rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    line-height: 1.5;
+  }
+
+  .main-info-title {
+    text-align: left;
+  }
+
+  .main-info-text {
+    text-align: left;
   }
 
   .container-card {
