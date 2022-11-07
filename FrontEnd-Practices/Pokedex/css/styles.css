@@ -1,0 +1,67 @@
+:root {
+  --background: #FFF6A4;
+  --background-alter: #E65A41;
+  --input-border: #C52018;
+  --input-text: #E65A41;
+  --btn-background: #9C5200;
+  --primary-default: #FFF;
+}
+
+/* Default */
+body {
+  background-color: var(--background);
+}
+
+h1, h2, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  font-family: 'Quicksand', sans-serif;
+}
+
+img {
+  width: 50%;
+}
+
+/* Header */
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+/* Main */
+.main-title {
+  text-align: center;
+}
+
+.main-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.input-name {
+  padding: 0.5rem;
+  width: 13.542rem;
+  display: block;
+  border: 1px solid var(--input-border);
+  font-size: 1.1rem;
+  background: none;
+  color: var(--input-text);
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  width: 13.543rem;
+  background-color: var(--btn-background);
+  color: var(--primary-default);
+  border: none;
+  border-radius: 5px;
+}
