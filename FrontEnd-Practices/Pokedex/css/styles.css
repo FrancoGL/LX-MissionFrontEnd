@@ -16,8 +16,13 @@ h1, h2, button {
   font-family: 'Roboto', sans-serif;
 }
 
-input {
+input, span, li {
   font-family: 'Quicksand', sans-serif;
+}
+
+span, li {
+  display: block;
+  line-height: 1.5;
 }
 
 img {
@@ -37,6 +42,23 @@ img {
 .main-img {
   display: block;
   margin: 0 auto;
+}
+
+.data {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.title {
+  display: inline;
+  font-weight: bold;
+}
+
+.stat, .move {
+  display: inline;
+  font-weight: bold;
+  margin-left: 0.5rem;
 }
 
 .form {
