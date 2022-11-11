@@ -1,0 +1,19 @@
+body {
+  background-color: var(--background-alter);
+}
+
+h1,
+span {
+  color: var(--primary-default);
+}
+
+.message-error {
+  margin: 1rem 0;
+  display: block;
+  text-align: center;
+}
+
+.input-name {
+  border-color: var(--primary-default);
+  color: var(--primary-default);
+}

@@ -1,10 +1,10 @@
 :root {
-  --background: #FFF6A4;
-  --background-alter: #E65A41;
-  --input-border: #C52018;
-  --input-text: #E65A41;
-  --btn-background: #9C5200;
-  --primary-default: #FFF;
+  --background: #fff6a4;
+  --background-alter: #e65a41;
+  --input-border: #c52018;
+  --input-text: #e65a41;
+  --btn-background: #9c5200;
+  --primary-default: #fff;
 }
 
 /* Default */
@@ -12,15 +12,20 @@ body {
   background-color: var(--background);
 }
 
-h1, h2, button {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+button {
+  font-family: "Roboto", sans-serif;
 }
 
-input, span, li {
-  font-family: 'Quicksand', sans-serif;
+input,
+span,
+li {
+  font-family: "Quicksand", sans-serif;
 }
 
-span, li {
+span,
+li {
   display: block;
   line-height: 1.5;
 }
@@ -55,7 +60,8 @@ img {
   font-weight: bold;
 }
 
-.stat, .move {
+.stat,
+.move {
   display: inline;
   font-weight: bold;
   margin-left: 0.5rem;
@@ -79,9 +85,10 @@ img {
 }
 
 .btn {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   margin-top: 1rem;
   width: 13.543rem;
+  font-size: 1.1rem;
   background-color: var(--btn-background);
   color: var(--primary-default);
   border: none;
