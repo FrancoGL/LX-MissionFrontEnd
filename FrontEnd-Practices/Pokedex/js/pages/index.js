@@ -2,7 +2,7 @@ import { getPokemon } from "../operations/get.js";
 import { checkInput } from "../utils/check_input.js";
 import { setData } from "../utils/generate_elements.js";
 
-const $img = document.querySelector(".main-img");
+const $img = document.querySelector(".card-img");
 const $input = document.getElementById("name");
 
 document.addEventListener("submit", (e) => {

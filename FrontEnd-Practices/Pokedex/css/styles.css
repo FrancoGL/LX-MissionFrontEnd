@@ -26,8 +26,8 @@ li {
 
 span,
 li {
-  display: block;
   line-height: 1.5;
+  text-transform: capitalize;
 }
 
 img {
@@ -44,15 +44,63 @@ img {
   text-align: center;
 }
 
-.main-img {
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: var(--primary-default);
+  border-radius: 10px;
+}
+
+.card-img, .main-img {
   display: block;
   margin: 0 auto;
 }
 
-.data {
+.card-body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+}
+
+.border-style {
+  padding: 0.2rem;
+  border: 1px solid var(--btn-background);
+  border-radius: 10px;
+}
+
+#general {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  justify-content: space-around;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#stats {
+  margin-top: 0.5rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#stats span {
+  width: 100%;
+  text-align: center;
+}
+
+#stats ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#stats li {
+  display: block;
+  width: 50%;
+}
+
+#moves {
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .title {
@@ -64,10 +112,11 @@ img {
 .move {
   display: inline;
   font-weight: bold;
-  margin-left: 0.5rem;
+  text-transform: capitalize;
 }
 
 .form {
+  margin-top: 1rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -93,4 +142,35 @@ img {
   color: var(--primary-default);
   border: none;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .logo {
+    width: 40%;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .card {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 15%;
+  }
+
+  .main-img {
+    width: 25%;
+  }
+
+  .card {
+    width: 25%;
+  }
 }

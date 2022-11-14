@@ -1,8 +1,14 @@
-const $dataContainer = document.getElementById("data");
+const $dataContainer = document.getElementById("card-data");
+const $general = document.getElementById("general");
+const $stats = document.getElementById("stats");
+const $moves = document.getElementById("moves");
 
 const generateSpan = (text, name) => {
   let $span = document.createElement("span");
-  $span.innerHTML = `<span class="title">${text}</span>: ${name}`;
+  $span.innerHTML =
+    name != null
+      ? `<span class="title">${text}</span>: ${name}`
+      : `<span class="title">${text}</span>`;
   return $span;
 };
 
@@ -42,5 +48,11 @@ export const setData = (name, type, stats, moves) => {
   generateLiStats(stats, $ulStats);
   const $ulMoves = generateUl("Moves");
   generateLiMoves(moves, $ulMoves);
-  appendElements($spanName, $spanType, $ulStats, $ulMoves);
+  $general.appendChild($spanName);
+  $general.appendChild($spanType);
+  $general.classList.add("border-style");
+  $stats.appendChild($ulStats);
+  $stats.classList.add("border-style");
+  $moves.appendChild($ulMoves)
+  $moves.classList.add("border-style");
 };
