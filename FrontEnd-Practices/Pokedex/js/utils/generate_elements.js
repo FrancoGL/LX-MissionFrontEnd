@@ -1,4 +1,3 @@
-const $dataContainer = document.getElementById("card-data");
 const $general = document.getElementById("general");
 const $stats = document.getElementById("stats");
 const $moves = document.getElementById("moves");
@@ -35,11 +34,6 @@ const generateLiMoves = (moves, $ulContainer) => {
   }
 };
 
-const appendElements = (...args) => {
-  for (const element of args) {
-    $dataContainer.appendChild(element);
-  }
-};
 
 export const setData = (name, type, stats, moves) => {
   const $spanName = generateSpan("Name", name);
@@ -48,6 +42,7 @@ export const setData = (name, type, stats, moves) => {
   generateLiStats(stats, $ulStats);
   const $ulMoves = generateUl("Moves");
   generateLiMoves(moves, $ulMoves);
+  
   $general.appendChild($spanName);
   $general.appendChild($spanType);
   $general.classList.add("border-style");
